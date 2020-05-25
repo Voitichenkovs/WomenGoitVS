@@ -76,13 +76,16 @@ body {
  background: url("../images/wallpaper.jpg") center no-repeat;
  background-size: cover;
 }
-.container{
-background-color: rgba(255, 255, 255, 0.6);
-border-radius: 5px;
-padding: 10px;
+.header .container{
+    background-color: rgba(224, 214, 214, 0.6);
+    border-radius: 5px;
+    padding: 10px;
 }
 .intro .container{
     margin-top: 110px;
+    background-color: rgba(224, 214, 214, 0.6);
+    border-radius: 5px;
+    padding: 10px;
 }
 .about__me{
     text-align: center;
@@ -118,3 +121,97 @@ padding: 10px;
     text-decoration: underline;
     color: rgb(114, 35, 74);
 }
+
+.section{
+    padding: 80px 0;
+    }
+    
+    .section__header{
+      width: 100%;
+      max-width: 950px;
+      margin: 0 auto;
+    
+      text-align: center;
+    }
+    
+    .section__uptitle{
+      font-size: 20 px;
+      color: #333;
+      font-family: 'Kaushan Script', cursive;
+    }
+    
+    .section__title{
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    
+    .section__title::after{
+      content: "";
+      width: 60px;
+      height: 3px;
+      display: block;
+      margin: 50px auto;
+    
+      background-color: rgb(29, 2, 126);
+    }
+    
+    .section__text{
+      color: #999999;
+      font-size: 14px;
+    }
+    .about__story{ 
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    .about__item{
+      width: 380px;
+      height: 250px;
+      background-color: rgb(121, 187, 241);
+      position: relative;
+    }
+    
+    img{
+      width: 380px;
+      height: 250px;
+    
+    }
+    
+    .about__item:hover .about__img img{
+      opacity: 0.2;
+    
+    }
+    .about__item:hover .about__img{
+      transform:  rotate(-20deg);
+     
+    }
+    .about__img{
+      background: linear-gradient(to bottom, #680f68, #b1eff3);
+      transition: transform 0.2s linear;
+      height: 100%;
+    }
+    .about__item:hover .about__text{
+      opacity: 1;
+    
+    }
+    .about__text{
+      text-transform: uppercase;
+      width: 100%;
+      font-size: 18px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 0;
+      color: #fff;
+      font-weight: 700;
+      z-index: 2;
+      opacity: 0;
+    
+      transform: translate3d(0, 50%, 0);
+    
+      transition: opacity 0.6s lianer;
+      
+    
+    }
